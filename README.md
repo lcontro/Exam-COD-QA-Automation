@@ -37,4 +37,7 @@ VERSIONS
 >    Initial proyect  
 
 >**0.1**  
->    Create folder structure
+>    Create folder structure  
+
+>**0.2**  
+>    Update Configuration File  
