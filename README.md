@@ -36,5 +36,5 @@ VERSIONS
 >**0.0**  
 >    Initial proyect  
 
->**0.1** 
+>**0.1**  
 >    Create folder structure
