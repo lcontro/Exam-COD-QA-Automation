@@ -17,7 +17,7 @@ export class LoginComponent{
         await homePageObjects.LoginBtn.click();
     }
 
-    public async login(username:string, password:string){
+    public async login(username, password){
         this.visit();
         await this.loginComponentObjects.UsernameInput.click();
         await this.loginComponentObjects.UsernameInput.fill(username);

@@ -46,27 +46,40 @@ test('Should not login with empty credentials', async ({ page }) => {
 test('Should not login with invalid credentials by username', async ({ page }) => {
     const loginComponent = new LoginComponent(page);
 
-    await loginComponent.login("lcontro","123456");
+    await loginComponent.login(process.env.usernameAccountLoginWithoutDeposit,process.env.invalidpasswordAccountLoginWithoutDeposit);
 
     //Expected
     await loginComponent.badCredentialsMessageExpected();
 });
 
-test('Should login without valid credentials by email', async ({ page }) => {
+test('Should not login with invalid credentials by email', async ({ page }) => {
     const loginComponent = new LoginComponent(page);
 
-    await loginComponent.login("lcontro@gmail.com","123456");
+    await loginComponent.login(process.env.emailAccountLoginWithoutDeposit,process.env.invalidpasswordAccountLoginWithoutDeposit);
+
 
     //Expected
     await loginComponent.badCredentialsMessageExpected();
 });
 
 test('Should login with valid credentials by username with deposits', async ({ page }) => {
+    const loginComponent = new LoginComponent(page);
 
+    await loginComponent.login(process.env.emailAccountLoginWithoutDeposit,process.env.invalidpasswordAccountLoginWithoutDeposit);
+
+
+    //Expected
+    await loginComponent.badCredentialsMessageExpected();
 });
 
 test('Should login with valid credentials by username without deposits', async ({ page }) => {
+    const loginComponent = new LoginComponent(page);
 
+    await loginComponent.login(process.env.emailAccountLoginWithoutDeposit,process.env.invalidpasswordAccountLoginWithoutDeposit);
+
+
+    //Expected
+    await loginComponent.badCredentialsMessageExpected();
 });
 
 test('Should login with valid credentials by email with deposits', async ({ page }) => {
