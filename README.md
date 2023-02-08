@@ -41,3 +41,6 @@ VERSIONS
 
 >**0.2**  
 >    Update Configuration File  
+
+>**0.3**  
+>    Add Login Scenarios  
