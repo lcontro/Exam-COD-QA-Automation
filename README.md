@@ -4,8 +4,8 @@ REQUIREMENT
 -----------------------  
 Make a project with Typescript + Playwright to check the Login page.
   
-__Objective:__ document test organization decisions. It is not necessary to implement all the test scenarios, simply documenting them is enough.  
-__Deliverable:__ in this exercise, not only the delivered code is assessed, but also the documentation; It is recommended to document the recommendations/decisions made and list all the possible use cases to be tested.  
+__Objective:__ document test organization decisions. It isn't necessary to implement all the test scenarios, simply documenting them is enough.  
+__Deliverable:__ in this exercise not only the delivered code is assessed, but also the documentation; It's recommended to document the recommendations/decisions made and list all the possible use cases to be tested.  
 __Delivery time__: 72 hours (Friday at 3:40 p.m. - GMT+1)  
   
   
@@ -22,7 +22,7 @@ Second, I chose to use a repository for testing because:
 - As indicated by good practices, i implemented conventional commit messaging.
   
     
-The first thing I obviously did was install playwright and generated the structure that I consider to be the best for this type of project. This structure is explained a little below.
+The first thing I obviously did was install playwright and generated the structure that I consider to be the best for this type of project. This structure is explained a in the structure section (little below).
 
 Then I focused on creating the scenarios according to what I think should be tested without knowing exactly the real business and development flows. I think I made the different scenarios possible. Basically my train of thought was by:
 - Initial test that the component to be tested is reached correctly.
