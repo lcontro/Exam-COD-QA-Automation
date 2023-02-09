@@ -4,9 +4,9 @@ REQUIREMENT
 -----------------------  
 Make a project with Typescript + Playwright to check the Login page.
   
-Objective: document test organization decisions. It is not necessary to implement all the test scenarios, simply documenting them is enough.  
-Deliverable: in this exercise, not only the delivered code is assessed, but also the documentation; It is recommended to document the recommendations/decisions made and list all the possible use cases to be tested.  
-Delivery time: 72 hours (Friday at 3:40 p.m. - GMT+1)  
+__Objective:__ document test organization decisions. It is not necessary to implement all the test scenarios, simply documenting them is enough.  
+__Deliverable:__ in this exercise, not only the delivered code is assessed, but also the documentation; It is recommended to document the recommendations/decisions made and list all the possible use cases to be tested.  
+__Delivery time__: 72 hours (Friday at 3:40 p.m. - GMT+1)  
   
   
 DECISIONS   
@@ -18,7 +18,8 @@ Second, I chose to use a repository for testing because:
 - I use it in my day to day and it seems to me the minimum for any type of development.  
 - You will be able to evaluate my way of working and you will be able to follow up on my process and my thoughts. 
 - It's the best way to share the code without thinking about permission, access and so on.
-- As indicated by good practices, I created a branch for each feature I wanted to do. At the end of this file you can see the history of the "versions" to also understand how the branch order was without having to see the merges and the history.  
+- As indicated by good practices, I created a branch for each feature I wanted to do. At the end of this file you can see the history of the "versions" to also understand how the branch order was without having to see the merges and the history.
+- As indicated by good practices, i implemented conventional commit messaging.
   
     
 The first thing I obviously did was install playwright and generated the structure that I consider to be the best for this type of project. This structure is explained a little below.
@@ -41,19 +42,19 @@ Also, I implemented the configuration file behavior per environment. The idea of
 
 STRUCTURE
 ----------------------- 
-Files:  
+__Files:__ 
 PO - contains only locators  
 CMN - contains common functions for spec  
 SPEC - contains only suit cases  
 
-Directories:  
+__Directories:__  
 Core - contains shared enums, interfaces  
 Shared - contains test cases which are equaly associated with more then one page  
 Pages - contains the folders of each page tested.  
 Pages/*[page-name] - folders which are nested and imitate the route of pages.  
    
   
-Assumptions:  
+__Assumptions:__  
   
 The directory structure for specs should be determined by route. It means that all you need to find yourself around is to know the route.  
 Page-objects should be close to the specs. Thanks to that, whenever you want to write a new test case you don’t have to search for locators, functions.  
@@ -70,8 +71,17 @@ All spec model is described mostly by three simple files.
 DISCLAIMER  
 -----------------------  
 This is the first time I use this framework. Although it is similar to other frameworks that I use, I had to assimilate the peculiarities of this framework (installation, ways to solve problems, etc) in a short time. So maybe in very specific things, there are better solutions or different ways of doing it.    
+
+I would have liked to implement successful login cases, but I couldn't register on the page. The registration process doesn't recognize me as a person on the census. I sent an email with my ID and information. I'm still waiting for an answer.
     
     
+RECOMMENDATIONS
+-----------------------
+I dared to make the following recommendations that I saw when doing this exam:  
+- I don't recommend using popup for login or error messages. It is an old way of doing it and in the new good UX/UI practices, it's not recommended to do it. 
+- Use Id in HTML elements.
+- Improve the registration process. It's slow and discourages signing up.
+
 VERSIONS
 -----------------------
 
@@ -89,3 +99,8 @@ VERSIONS
 
 >**0.4**  
 >    Add Conclusions  
+
+
+
+
+
